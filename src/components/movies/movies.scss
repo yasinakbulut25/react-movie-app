@@ -1,0 +1,27 @@
+@import "../../App.scss";
+
+.all-movies {
+  padding-top: calc($header-height + 2rem);
+  .filter-buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    .filter-btn {
+      padding: 0.5rem 1rem;
+      background-color: rgba(29, 29, 29, 0.609);
+      border: none;
+      outline: none;
+      cursor: pointer;
+      color: $text-color;
+      border-radius: 0.5rem;
+      transition: all 0.25s;
+      &.active {
+        background-color: $first-color;
+        color: $dark-color;
+      }
+    }
+  }
+}

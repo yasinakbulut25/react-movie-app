@@ -1,0 +1,18 @@
+@import "../../App.scss";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 3rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #566683;
+  .logo {
+    width: 128px;
+    margin-bottom: 2rem;
+  }
+  a {
+    padding-left: 0.35rem;
+    color: $first-color;
+  }
+}

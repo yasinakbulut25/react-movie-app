@@ -1,0 +1,30 @@
+@import "../../App.scss";
+
+.intro-area {
+  position: relative;
+  width: 100%;
+  padding: 2rem 1rem 0 1rem;
+  overflow: hidden;
+  .hero-img {
+    aspect-ratio: 2 / 1;
+    width: 100%;
+    filter: brightness(0.6);
+    object-fit: cover;
+    min-height: 300px;
+    max-height: 400px;
+    border-radius: 1rem;
+  }
+  .tv-hero {
+    position: absolute;
+    left: 1rem;
+    bottom: 3rem;
+    max-width: 90%;
+    .main-hero .hero-infos .hero-title {
+      @include truncate(2);
+      font-size: 2rem;
+    }
+  }
+  .main-hero .hero-infos .hero-overview {
+    @include truncate(2);
+  }
+}

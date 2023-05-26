@@ -1,0 +1,117 @@
+@import "../../App.scss";
+.movie-detail-container {
+  .main-img {
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    }
+  }
+}
+.movie-detail {
+  margin-top: -300px;
+  padding: 0 1rem;
+}
+.movie-grid {
+  display: grid;
+  grid-template-columns: 400px calc(100% - 400px);
+  gap: 1rem;
+  @include tablet {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hero-infos {
+    width: 100%;
+  }
+}
+.main-hero {
+  &::before {
+    display: none;
+  }
+  .movie-poster {
+    width: 350px;
+    max-width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+  }
+  .hero-infos {
+    gap: 1.5rem;
+    justify-content: flex-start;
+    .hero-title {
+      @include truncate(10);
+    }
+    .tagline i {
+      color: $first-color;
+    }
+    .hero-overview {
+      @include truncate(20);
+    }
+    .date {
+      font-size: 0.9rem;
+      .bi {
+        color: $first-color;
+        padding-right: 0.25rem;
+      }
+    }
+  }
+}
+.actors {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
+  gap: 1rem;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  .actor {
+    position: relative;
+    min-width: 150px;
+    width: 150px;
+    height: 225px;
+    .actor-profile {
+      width: 150px;
+      height: 225px;
+      filter: brightness(0.75);
+      object-fit: contain !important;
+      border-radius: 0.5rem;
+    }
+    .actor-info {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      padding: 0.5rem;
+      background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+      .actor-role {
+        font-size: 0.9rem;
+        color: $first-color;
+        font-weight: 500;
+      }
+      .actor-name {
+        font-size: 0.75rem;
+        color: $text-color;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.trailer {
+  width: auto !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+  margin: 0 auto;
+  max-width: 640px;
+}

@@ -1,0 +1,26 @@
+@import "../../App.scss";
+
+.error-container {
+  position: relative;
+  padding: 5rem 0;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  .error-title {
+    font-size: 10rem;
+    color: $first-color;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+  .error-link {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+    background-color: transparent;
+    border: 2px solid $first-color;
+    border-radius: 0.5rem;
+    color: $text-color i {
+      color: $first-color;
+    }
+  }
+}

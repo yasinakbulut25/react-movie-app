@@ -1,0 +1,28 @@
+@import "../../App.scss";
+@import "../movies-boxes/movies-boxes.scss";
+@import "../movies/movies.scss";
+
+.search-container {
+  min-height: 80vh;
+  .search-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    .search-input {
+      position: relative;
+      padding: 1rem 1.25rem;
+      background-color: #111111;
+      border: 1px solid #1e1e1e;
+      border-radius: 0.5rem;
+      outline: none;
+      width: 400px;
+      max-width: 100%;
+      color: $text-color;
+    }
+  }
+  .not-found {
+    text-align: center;
+  }
+}
