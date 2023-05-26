@@ -1,5 +1,5 @@
 # React Film ve Dizi Sitesi
-React Hooks, Context API ve HTML&CSS kullanarak film ve dizi tanıtım sitesi geliştirdim. Film ve dizi verilerini The Movie Database (TMDB) API kaynağından axios kütüphanesi kullanarak çektim. Sayfalandırma yapısı için react-router-dom kullandım. Filmleri kaydırmalı tasarım şeklinde listelerken swiper kütüphanesini kullandım. Bu proje sayesinde birçok kategoride film ve dizileri bulabilir ve detaylarını görebilirsiniz.
+React Hooks, Context API ve HTML & SCSS kullanarak film ve dizi tanıtım sitesi geliştirdim. Film ve dizi verilerini The Movie Database (TMDB) API kaynağından axios kütüphanesi kullanarak çektim. Sayfalandırma yapısı için react-router-dom kullandım. Filmleri kaydırmalı tasarım şeklinde listelerken swiper kütüphanesini kullandım. Bu proje sayesinde birçok kategoride film ve dizileri bulabilir ve detaylarını görebilirsiniz.
 
 Proje içerisinde yer alan özellikler;
 
